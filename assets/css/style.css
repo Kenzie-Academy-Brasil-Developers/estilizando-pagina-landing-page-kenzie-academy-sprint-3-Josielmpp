@@ -35,7 +35,8 @@ family=Lato -> Títulos, textos
     
 }
 img{
-    width: 100px;
+    width: 120px;
+    height: 120px;
 }
   
 /* GERAL */
@@ -84,10 +85,13 @@ body{
 /* HEADER */
 header{
     background-color: var(--backblue);
+    
     margin-top: 26%;
+    
 }
 header .large-container{
     display: flex;
+    
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -95,6 +99,7 @@ header .large-container{
     /* margin-right: 10%; */
     margin-top: 3%;
     box-sizing: border-box;
+    
 } 
 
 header .large-container ul{
@@ -113,16 +118,21 @@ header .large-container ul li a{
     padding: 10px;
     font-size: 13px;
 } 
-header .large-container figure{
-    /* margin: 10px; */
-} 
+/* header .large-container figure{
+    margin: 10px;
+}  */
 header .large-container img{
     width: 70px;
 }
-header .large-container figcaption{
+/* header .large-container figcaption{
     opacity: 0;
     display: none;
-}  
+}   */
+
+figcaption{
+    opacity: 0;
+    display: none;
+} 
 
 /* header .large-container figure figcaption{
     display: none
@@ -144,18 +154,22 @@ footer{
     justify-content: center;
     align-items: center;
     width: 100%;
+
  
     
 }
-
+/* main .secaoDestaque{
+    background-image: url('./assets/img/background-destaque.webp'); 
+} */
 .inicial .secaoDestaque{
     background-color: var(--backblue);
+    /* background-image: url('/assets/img/background-destaque.webp'); */
     display: flex;
     flex-direction: column;
     width: 100%;
     justify-content: center;
     align-items: center;
-    padding: 0px 10%;
+    padding: 0px 10% 10%;
     box-sizing: border-box;
 
 }
@@ -182,6 +196,7 @@ footer{
     margin-top: 5%;
     margin-bottom: 8.5%;
     font-weight: 400;
+
 }
 
 .inicial .secaoDestaque .secaoDestaqueFormulario{
@@ -195,7 +210,7 @@ footer{
     border-top-left-radius:5px;
     border-bottom-left-radius:5px;
  
-
+    padding-left:20px ;
     border: none;
 }
 .inicial .secaoDestaque .secaoDestaqueFormulario button{
@@ -210,12 +225,14 @@ footer{
 }
 
 
+
 .inicial .secaoSobre{
-    margin-top: 130px;
+    margin-top: 19%;
     display: flex;
     /* justify-content: center; */
     padding: 10%;
 }
+
 
 
 .inicial .secaoSobre .flex{
@@ -229,14 +246,17 @@ footer{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    
 }
 .inicial .secaoSobre .flex .flex-col h2{
     font-family: Montserrat, sans-serif;
     display: flex;
     color: #303030;
     justify-content: center;
-    font-size: 24px;
-    /* padding: 10%; */
+    font-size: 27px;
+    padding-left: 15%;
+    font-weight: 700;
+
 }
 .inicial .secaoSobre .flex .flex-col p{
 
@@ -245,10 +265,14 @@ footer{
     flex-wrap: wrap;
     display: flex;
     align-items: center;
-    font-size: 19px;
+    font-size: 24px;
     color: #303030;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    /* margin-top: 23%; */
+    padding-left: 15%;
+    margin-bottom: 22%;
+    text-align: left;
+    line-height: 29px;
+    font-weight: 400;
     /* padding: 10%; */
 
 }
@@ -258,6 +282,11 @@ footer{
     color:#818181;
     /* padding: 0px 10%; */
     justify-content: center;
+    padding-left: 15%;
+    line-height: 29px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 4%;
     
 }
 
@@ -270,9 +299,49 @@ footer{
     background-color: white;
     border: #818181 solid 1px ;
     border-radius: 5px;
+    margin-left: 15%;
+    color: #303030;
+    font-size: 18px;
 
 
 }
+
+.inicial .secaoSobre .flex .flex-col .python{
+    width: 256px;
+    height: 156px;
+    margin-bottom: 33%;
+    margin-top: 0px;
+}
+.inicial .secaoSobre .flex .flex-col img{
+    height: 124px;
+    margin-top: 42%;
+}
+.inicial .secaoSobre .flex .flex-col h2{
+    text-align: center;
+    align-items: center;
+    line-height: 28px;
+    margin-top: 4%;
+    margin-bottom: 25%;
+}
+.inicial .secaoSobre .flex .flex-col ul li{
+    color: #636161;
+    margin-left: 15%;
+    list-style: outside;
+    line-height: 26px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.inicial .secaoSobre .flex .flex-col:nth-child(3){
+    background-color: #dfdfdf;
+    width: 100%;
+    align-items: center;
+}
+
+.inicial .secaoSobre .flex .flex-col:nth-child(4){
+    background-color: #dfdfdf;
+}
+
 
 .inicial .secaoCursos
 
