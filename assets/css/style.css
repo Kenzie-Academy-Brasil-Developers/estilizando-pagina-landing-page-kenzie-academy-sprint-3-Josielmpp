@@ -36,7 +36,7 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Lato', sans-serif;
     list-style: none;
 }
 img{
@@ -45,11 +45,7 @@ img{
 div.flex{
     display: flex;
 }
-div.full-container{
-    width: 100%;
-    max-width: 1850px;
-    margin:0 auto;
-}
+
 div.large-container{
     width: 100%;
     max-width: 1170px;
@@ -67,7 +63,12 @@ html{}
 /* HTML */
   
 /* BODY */
-body{}
+
+body {}
+
+body h2 {
+    font-family: "Monserrat", sans-serif;
+}
 /* BODY */
   
 /* HEADER */
@@ -75,12 +76,32 @@ header{}
 /* HEADER */
   
 /* FOOTER */
-footer{}
+footer{
+    width: 320px;
+    /* min-width: 320px; */
+    height: 80px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+footer p {
+    display: none;
+}
 /* FOOTER */
 
 /* INICIAL */
 main{
-    
+    width: 100%;
 }
 
 .secaoCursos {
@@ -114,11 +135,13 @@ main{
 }
 
 .secaoCursos img {
-    height: 100px;
+    height: 10%;
+    min-height: 100px;
 }
 
 .secaoCursos h3 {
     height: 50px;
+    color: #303030;
 }
 
 
@@ -150,7 +173,7 @@ main{
 }
 
 .calendar {
-    width: 320px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -188,6 +211,7 @@ main{
 
 .calendarContent h3 {
     height: 20%;
+    color: #303030;
 }
 
 .calendarContent p {
@@ -343,5 +367,71 @@ main{
 /* MEDIA QUERIES */
     @media screen and (min-width: 400px) {}
   
-    @media screen and (min-width: 800px) {}
+    @media screen and (min-width: 800px) {
+
+        div.full-container{
+            width: 100%;
+            max-width: 1850px;
+            margin:0 auto;
+        }
+
+        /* Cursos */
+
+        .secaoCursos {
+            width: 100%;
+            margin: auto;
+        }
+        
+            .secaoCursos p {
+            height: 80px;
+        }
+        
+        .secaoCursos ul {
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .secaoCursos li {
+            width: 33%;
+            max-width: 620px;
+            height: 320px;
+            color: #818181;
+        }
+        
+        .secaoCursos img {
+            height: 10%;
+            min-height: 100px;
+        }
+        
+        /* Calendário */
+
+        .secaoCalendar {
+            box-sizing: border-box;
+            width: 60%;
+            margin: auto;
+        }
+                
+        .calendar {
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+            color: #818181;
+            
+        }
+        
+        .calendar li {
+            width: 30%;
+            max-width: 350px;
+        }
+                
+        .calendarFeet button {
+            width: 30%;
+            height: 30%;
+            font-size: 20px;
+        }
+        
+        
+
+    }
 /* MEDIA QUERIES */
