@@ -84,18 +84,23 @@ body{
 /* HEADER */
 header{
     background-color: var(--backblue);
+    margin-top: 26%;
 }
 header .large-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-      /* width: 100vw; */
+    width: 100%;
+    margin-left: 3%;
+    /* margin-right: 10%; */
+    margin-top: 3%;
+    box-sizing: border-box;
 } 
 
 header .large-container ul{
     display: flex;
     list-style: none;
-  
+    margin-right: 10%;
     /* text-decoration: none; */
 } 
 
@@ -109,13 +114,14 @@ header .large-container ul li a{
     font-size: 13px;
 } 
 header .large-container figure{
-    margin: 10px;
+    /* margin: 10px; */
 } 
 header .large-container img{
-    width: 80px;
+    width: 70px;
 }
 header .large-container figcaption{
     opacity: 0;
+    display: none;
 }  
 
 /* header .large-container figure figcaption{
@@ -137,7 +143,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 100%;
+    width: 100%;
  
     
 }
@@ -149,17 +155,20 @@ footer{
     width: 100%;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 0px 10%;
     box-sizing: border-box;
 
 }
 
 .inicial .secaoDestaque h2{
-
-    font-weight: 300;
-    font-size: 45px;
-    margin: 20px;
+    line-height: 42px;
+    font-weight: 400;
+    font-size: 36px;
+    /* margin: 10%; */
     color: white;
+    text-align: center;
+    margin-top: 4%;
+
     font-family: Montserrat, sans-serif;
 }
 
@@ -170,15 +179,19 @@ footer{
     align-items: center;
     color: white;
     font-size: 21px;
-    margin-bottom: 20px;
+    margin-top: 5%;
+    margin-bottom: 8.5%;
+    font-weight: 400;
 }
 
 .inicial .secaoDestaque .secaoDestaqueFormulario{
     margin-bottom: 115px;
     display: flex;
+    box-sizing: border-box;
 }
 .inicial .secaoDestaque .secaoDestaqueFormulario input{
-    height: 30px;
+    height: 38px;
+    width: 230px;
     border-top-left-radius:5px;
     border-bottom-left-radius:5px;
  
@@ -186,11 +199,14 @@ footer{
     border: none;
 }
 .inicial .secaoDestaque .secaoDestaqueFormulario button{
-    height: 30px;
-
+    height: 38px;
+    width: 41%;
     border-top-right-radius:5px;
     border-bottom-right-radius:5px;
     border: none;
+    background-color: #007aff;
+    color: white;
+    font-size: 14px;
 }
 
 
@@ -198,7 +214,7 @@ footer{
     margin-top: 130px;
     display: flex;
     /* justify-content: center; */
-    padding: 20px;
+    padding: 10%;
 }
 
 
@@ -220,7 +236,7 @@ footer{
     color: #303030;
     justify-content: center;
     font-size: 24px;
-    padding: 20px;
+    /* padding: 10%; */
 }
 .inicial .secaoSobre .flex .flex-col p{
 
@@ -233,21 +249,21 @@ footer{
     color: #303030;
     margin-top: 60px;
     margin-bottom: 60px;
-    padding: 20px;
+    /* padding: 10%; */
 
 }
 
 .inicial .secaoSobre .flex .flex-col span{
     display: flex;
     color:#818181;
-    padding: 0px 20px;;
+    /* padding: 0px 10%; */
     justify-content: center;
     
 }
 
 .inicial .secaoSobre .flex .flex-col button{
     display: flex;
-    margin: 20px;
+    margin: 10%;
     justify-content: center;
     align-items: center;
     height: 50px;
@@ -257,6 +273,8 @@ footer{
 
 
 }
+
+.inicial .secaoCursos
 
 /* INICIAL */
 
