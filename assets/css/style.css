@@ -83,6 +83,47 @@ main{
     
 }
 
+.secaoCursos {
+    width: 320px;
+    margin: auto;
+}
+
+.secaoCursos article {
+    width: 100%;
+    text-align: center;
+}
+
+.secaoCursos h2 {
+    height: 50px;
+}
+.secaoCursos p {
+    height: 100px;
+}
+
+.secaoCursos ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secaoCursos li {
+    width: 100%;
+    height: 250px;
+    color: #818181;
+}
+
+.secaoCursos img {
+    height: 100px;
+}
+
+.secaoCursos h3 {
+    height: 50px;
+}
+
+
+/* Calendário */
+
 .secaoCalendar {
     box-sizing: border-box;
     width: 320px;
@@ -180,6 +221,8 @@ main{
     font-size: 16px;
     border-radius: 5px;
 }
+
+/* Contato */
 
 .secaoContato {
     box-sizing: border-box;
