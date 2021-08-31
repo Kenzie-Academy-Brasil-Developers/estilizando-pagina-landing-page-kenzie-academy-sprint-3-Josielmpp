@@ -372,6 +372,10 @@ main{
     border-radius: 3px;
 }
 
+.contactForm-button button:hover {
+    cursor: pointer;
+}
+
 /* INICIAL */
 
 /* EXTRAS */
