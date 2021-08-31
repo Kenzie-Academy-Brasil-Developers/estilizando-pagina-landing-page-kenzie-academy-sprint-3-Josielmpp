@@ -83,51 +83,136 @@ main{
     
 }
 
-.secaoCursos {
-    min-width: 320px;
-    border: 2px solid red;
-}
-
 .secaoCalendar {
-    min-width: 320px;
-    border: 2px solid red;
+    box-sizing: border-box;
+    width: 320px;
+    margin: auto;
 }
 
-.secaoContato .flex {
-    width: 320px;
-    height: 540px;
+.secaoCalendar-titulo {
+    box-sizing: border-box;
+    width: 80%;
+    height: 100px;
     margin: auto;
+}
+
+.secaoCalendar-titulo h2 {
+    text-align: center;
+    font-size: 19px;
+    height: 50%;
+}
+
+.secaoCalendar-titulo p {
+    text-align: center;
+    font-size: 15px;
+    height: 50%;
+}
+
+.calendar {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #818181;
+}
+
+.calendar li {
+    box-sizing: border-box;
+    width: 80%;
+    height: 700px;
+}
+
+.calendarDate {
+    box-sizing: border-box;
+    width: 100%;
+    height: 20%;
+    background-color: #00043e;
+    font-size: 36px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendarContent {
+    box-sizing: border-box;
+    width: 100%;
+    height: 45%;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #dfdfdf;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.calendarContent h3 {
+    height: 20%;
+}
+
+.calendarContent p {
+    height: 80%;
+    line-height: 1.8em;
+}
+
+.calendarFeet {
+    height: 25%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #efefef;
-    font-size: 15px;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 }
 
-.secaoContato .flex .flex-col {
+ .calendarFeet span {
+    /* display: inline-block; */
+    /* height: 50%; */
     width: 80%;
-    /* height: 280px; */
+    font-size: 36px;
+    text-align: center;
+}
+
+.calendarFeet button {
+    /* display: inline-block; */
+    width: 80%;
+    height: 40%;
+    border: none;
+    background-color: #007aff;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.secaoContato {
+    box-sizing: border-box;
+    background-color: #efefef;
+    width: 320px;
+    height: 480px;
     margin: auto;
-    /* display: flex; */
-    border: 1px solid red;
-    /* justify-content: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+    color: #818181;
+}
+
+.secaoContato-titulo {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.secaoContato-titulo h2 {
+    margin: auto;
 }
 
 .secaoContato-informacoes {
-    /* align-self: flex-end; */
-    width: 100%;
-    height: 200px;
+    width: 80%;
+    height: 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    color: #818181;
-    
-}
-
-.secaoContato-informacoes a {
-    text-decoration: none;
-    color: #818181;
 }
 
 .secaoContato-informacoes p {
@@ -135,63 +220,69 @@ main{
 }
 
 .secaoContato-informacoes ul {
+    width: 100%;
     height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-form {
-    width: 100%;
-    height: 300px;
+.secaoContato-informacoes a {
+    text-decoration: none;
+    color: #818181;
+}
+
+.contactForm {
+    width: 80%;
+    height: 60%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    border: 1px solid red;
-    
 }
 
-.form-input-model {
-    width: 100%;
-    flex: 1;
-    /* height: 20%; */
-}
-
-.form-input-model input {
-    width: 100%;
-    height: 30px;
-    border: 1px solid #818181;
-    border-radius: 5px;
-    margin: auto;
-    border: 1px solid red;
-}
-
-.form-input-model textarea {
-    width: 100%;
-    height: 120px;
-    border: 1px solid #818181;
-    border-radius: 5px;
-}
-
-.form-input-model label {
+.contactForm label {
     display: none;
 }
 
-#myButton {
+.contactForm-input {
+    width: 100%;
+    height: 15%;
+}
+
+.contactForm-input input {
+    width: 100%;
+    height: 70%;
+    border: 1px solid #818181;
+    border-radius: 3px;
+}
+
+.contactForm-comment {
+    width: 100%;
+    height: 40%;
+}
+
+.contactForm-comment textarea {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #818181;
+    border-radius: 3px;
+}
+
+.contactForm-button {
+    width: 100%;
+    height: 15%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-button {
-    font-size: 15px;
+.contactForm-button button {
+    width: auto;
+    height: 30px;
     background-color: white;
+    color: #818181;
     border: 1px solid #818181;
     border-radius: 3px;
-    height: 30px;
 }
-
-
 
 /* INICIAL */
 
