@@ -68,6 +68,7 @@ body {}
 
 body h2 {
     font-family: "Monserrat", sans-serif;
+    color: #303030;
 }
 /* BODY */
   
@@ -103,6 +104,12 @@ footer p {
 main{
     width: 100%;
 }
+
+/* ********************************************************************* */
+        
+                            /* Cursos */
+
+/* ********************************************************************* */
 
 .secaoCursos {
     width: 320px;
@@ -145,7 +152,11 @@ main{
 }
 
 
-/* Calendário */
+/* ********************************************************************* */
+        
+                            /* Calendário */
+
+/* ********************************************************************* */
 
 .secaoCalendar {
     box-sizing: border-box;
@@ -246,7 +257,11 @@ main{
     border-radius: 5px;
 }
 
-/* Contato */
+/* ********************************************************************* */
+        
+                            /* Contato */
+
+/* ********************************************************************* */
 
 .secaoContato {
     box-sizing: border-box;
@@ -269,6 +284,15 @@ main{
 
 .secaoContato-titulo h2 {
     margin: auto;
+    text-transform: uppercase;
+}
+
+.infoContact {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .secaoContato-informacoes {
@@ -375,7 +399,11 @@ main{
             margin:0 auto;
         }
 
-        /* Cursos */
+/* ********************************************************************* */
+        
+                            /* Cursos */
+
+/* ********************************************************************* */
 
         .secaoCursos {
             width: 100%;
@@ -404,7 +432,11 @@ main{
             min-height: 100px;
         }
         
-        /* Calendário */
+/* ********************************************************************* */
+        
+                            /* Calendário */
+
+/* ********************************************************************* */
 
         .secaoCalendar {
             box-sizing: border-box;
@@ -430,7 +462,112 @@ main{
             height: 30%;
             font-size: 20px;
         }
+
+/* ********************************************************************* */
         
+                                /* Contato */
+
+/* ********************************************************************* */
+
+        .secaoContato {
+            width: 100%;
+            height: 400px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 15px;
+            color: #818181;
+        }
+        
+        .secaoContato-titulo {
+            height: 30%;
+            align-items: flex-end;
+        }
+        
+        .secaoContato-titulo h2 {
+            margin-bottom: 20%;
+        }
+
+        .infoContact {
+            width: 80%;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        
+        .secaoContato-informacoes {
+            width: 35%;
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        
+        .secaoContato-informacoes p {
+            height: 5%;
+        }
+                       
+        .contactForm {
+            width: 45%;
+            height: 70%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+                    
+        .contactForm-input {
+            width: 50%;
+            height: 20%;
+            position: relative;;
+        }
+        
+        .contactForm-input input {
+            width: 95%;
+            height: 80%;
+            border: 1px solid #818181;
+            border-radius: 3px;
+        }
+
+        #email {
+            position: absolute;
+            right: 0;
+        }
+        
+        .contactForm-comment {
+            width: 100%;
+            height: 50%;
+        }
+
+/* ********************************************************************* */
+        
+                                /* Footer */
+
+/* ********************************************************************* */
+        
+        footer{
+            width: 100%;
+            height: 150px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            
+        }
+        
+        footer a {
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        
+        footer p {
+            display: block;
+        }
+
+        footer p a {
+            font-size: 16px;
+            font-weight: normal;
+        }
         
 
     }
