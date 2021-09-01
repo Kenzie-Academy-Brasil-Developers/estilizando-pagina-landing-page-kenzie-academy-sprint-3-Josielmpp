@@ -215,6 +215,14 @@ main{
     color: #303030;
 }
 
+.secaoCursos img:hover {
+    filter: grayscale(100);
+    transition: 0.4s;
+    border: 1px solid #007aff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
 
 /* ********************************************************************* */
         
@@ -319,6 +327,15 @@ main{
     color: white;
     font-size: 16px;
     border-radius: 5px;
+}
+
+.calendarFeet button:hover {
+    transition: 0.4s;
+    background-color: #ddd;
+    color: #007aff;
+    border: 1px solid #007aff;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 /* ********************************************************************* */
@@ -434,6 +451,15 @@ main{
     color: #818181;
     border: 1px solid #818181;
     border-radius: 3px;
+}
+
+.secaoContato-informacoes a:hover {
+    box-shadow: 0 0 1em  #303030;
+}
+
+.contactForm-button button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 1em  #303030;
 }
 
 /* ********************************************************************* */
@@ -630,9 +656,7 @@ main{
 
 
 
-.contactForm-button button:hover {
-    cursor: pointer;
-}
+
 
 
 
