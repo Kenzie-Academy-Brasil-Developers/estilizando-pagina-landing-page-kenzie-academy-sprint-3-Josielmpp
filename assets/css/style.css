@@ -65,7 +65,7 @@ div.container{
 /* GERAL */
   
 /* HTML */
-html{}
+
 /* HTML */
   
 /* BODY */
@@ -862,3 +862,38 @@ main{
 
     }
 /* MEDIA QUERIES */
+@media screen and (min-width:769px){
+    header{
+        margin-top: 0px;
+
+    }
+    header .large-container{
+        width: 80%;
+        padding-left: 15%;
+        margin-top: 0px;
+        height: 45px;
+    }
+    header .large-container img{
+        width: 30px;
+        
+    }
+    header .large-container ul{
+        display: flex;
+        margin-right: 0px;
+    }
+    header .large-container ul li{
+        display: flex;
+    }
+    .inicial .secaoDestaque{
+        padding: 0px;
+    }
+    .inicial .secaoDestaque .secaoDestaqueFormulario{
+        margin-bottom: 88px;
+    }
+    .inicial .secaoSobre{
+        display: flex;
+    }
+    .inicial .secaoSobre .flex{
+        flex-direction: row;
+    }
+}
