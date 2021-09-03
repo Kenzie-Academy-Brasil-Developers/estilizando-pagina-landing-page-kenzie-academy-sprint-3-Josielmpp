@@ -347,7 +347,7 @@ main{
 .secaoContato {
     box-sizing: border-box;
     background-color: #efefef;
-    width: 320px;
+    width: 100%;
     height: 600px;
     margin: auto;
     display: flex;
@@ -369,7 +369,7 @@ main{
 }
 
 .infoContact {
-    width: 100%;
+    width: 320px;
     height: 100%;
     display: flex;
     flex-direction: column;
